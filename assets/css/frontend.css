@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.treatment-option {
+    list-style: none;
+}
+
+
+.treatment-option img {
+    width:22px;
+    margin-bottom: 5px;
+    margin-right:8px;
+    vertical-align:middle; 
+    
+}
+
+.treatment-option p {
+    font-size: 0.9em;
+    color: #666;
+}

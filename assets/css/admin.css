@@ -1,0 +1,41 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.treatment-options-field {
+    margin: 20px 0;
+}
+
+.treatment-options-field label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.treatment-options-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.treatment-option-label img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.treatment-options-group .description {
+    font-size: 12px;
+    color: #666;
+    width:100%;
+    float:left
+}
+.treatment-options-wrapper{
+    padding-left:0px;
+}
+.woocommerce_options_panel label.treatment-option-label{
+    margin:2px 15px;
+    width:350px;
+}
