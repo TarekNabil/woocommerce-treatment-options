@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce Treatment Options
  * Description: Adds custom treatment options to WooCommerce products.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Tarek Nabil
  * Text Domain: woocommerce-treatment-options
  */

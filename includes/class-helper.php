@@ -28,60 +28,81 @@ class Treatment_Options_Helper {
         return array(
             'machine_wash_60' => array(
             'label' => __( '60° Machine Wash', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/60-degrees-machine-wash.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/60-degrees-machine-wash-grey.svg'
             ),  
             'machine_wash_40' => array(
             'label' => __( '40° Machine Wash', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/40-degrees-machine-wash.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/40-degrees-machine-wash-grey.svg'
             ),
             'machine_wash_30' => array(
             'label' => __( '30° Machine Wash', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/30-degrees-machine-wash.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/30-degrees-machine-wash-grey.svg'
             ),
             'hand_wash' => array(
             'label' => __( 'Hand Wash', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Hand-wash.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Hand-wash-grey.svg'
             ),
             'cool_water' => array(
             'label' => __( 'Cool Water', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Cool-water.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Cool-water-grey.svg'
+            ),
+            'dry_clean' => array(
+            'label' => __( 'Dry Clean', 'woocommerce-treatment-options' ),
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Dry-clean-grey.svg'
             ),
             'dry_clean_only' => array(
             'label' => __( 'Dry Clean Only', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Dry-clean-only.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Dry-clean-only-grey.svg'
+            ),
+            'tumble_dry_on_low_setting' => array(
+            'label' => __( 'Tumble Dry on Low Setting', 'woocommerce-treatment-options' ),
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Tumble-dry-on-low-setting-grey.svg'
             ),
             'tumble_dry_low' => array(
             'label' => __( 'Tumble Dry Low, Remove While Slightly Damp', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Tumble-dry-low-and-remove-while-slightly-damp.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Tumbl-dry-on-low-setting-and-remove-while-slightly-damp2-grey.svg'
             ),
             'no_tumble_dry' => array(
             'label' => __( 'Do Not Tumble Dry', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-tumble-dry.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-tumble-dry-grey.svg'
+            ),
+            'professional_dry_clean' => array(
+            'label' => __( 'Professional Dry Clean any solvent except trichloroethylene', 'woocommerce-treatment-options' ),
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Professional-dry-clean-any-solvent-except-trichloroethylene-grey.svg'
             ),
             'dry_flat' => array(
             'label' => __( 'Dry Flat', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Dry-flat.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Dry-flat-grey.svg'
             ),
             'iron_low' => array(
             'label' => __( 'Iron at Low Temperature', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-at-low-temperature.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-at-low-temperature-grey.svg'
+            ),
+            'iron_medium' => array(
+            'label' => __( 'Iron at Medium Temperature', 'woocommerce-treatment-options' ),
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-at-medium-temperature-grey.svg'
             ),
             'iron_reverse' => array(
             'label' => __( 'Iron on Reverse Side', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-on-reverse-side.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-on-reverse-side-grey.svg'
+            ),
+            'iron_reverse' => array(
+            'label' => __( 'Iron on Reverse Side', 'woocommerce-treatment-options' ),
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Iron-on-reverse-side-grey.svg'
             ),
             'warm_iron_line_dry' => array(
             'label' => __( 'Warm Iron or Line Dry', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Warm-iron-or-line-dry.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Warm-iron-or-line-dry-grey.svg'
             ),
             'no_bleach' => array(
             'label' => __( 'Do Not Bleach', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-bleach.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-bleach-grey.svg'
             ),
             'no_wring' => array(
             'label' => __( 'Do Not Wring', 'woocommerce-treatment-options' ),
-            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-wring.svg'
+            'icon_url' => plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/Do-not-wring-grey.svg'
             ),
+
            
         );
     }
