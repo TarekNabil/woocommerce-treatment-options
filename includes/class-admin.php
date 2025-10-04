@@ -17,6 +17,9 @@ class WooCommerce_Treatment_Options_Admin {
         $options = Treatment_Options_Helper::get_all_options();
         $selected_options = get_post_meta( $post->ID, '_treatment_options', true );
         $selected_options = is_array( $selected_options ) ? $selected_options : array();
+        
+        // Get custom content
+        $custom_content = get_post_meta( $post->ID, '_treatment_options_content', true );
 
         echo '<div class="options_group treatment-options-group">';
         echo '<p class="form-field treatment-options-field">';
@@ -35,6 +38,25 @@ class WooCommerce_Treatment_Options_Admin {
         
         echo '</div>';
         echo '</p>';
+        
+        // Add WYSIWYG editor field
+        echo '<p class="form-field treatment-options-content-field">';
+        echo '<label for="treatment_options_content">' . __( 'Treatment Options Additional Content', 'woocommerce-treatment-options' ) . '</label>';
+        
+        wp_editor( 
+            $custom_content, 
+            'treatment_options_content', 
+            array(
+            'textarea_name' => '_treatment_options_content',
+            'textarea_rows' => 8,
+            'media_buttons' => true,
+            'teeny' => false,
+            'tinymce' => true, // Enable full TinyMCE
+            'quicktags' => true
+            )
+        );
+        
+        echo '</p>';
         echo '</div>';
     }
 
@@ -47,6 +69,7 @@ class WooCommerce_Treatment_Options_Admin {
             return;
         }
 
+        // Save treatment options
         $treatment_options = isset( $_POST['_treatment_options'] ) ? array_map( 'sanitize_text_field', $_POST['_treatment_options'] ) : array();
         
         // Validate that all selected options exist
@@ -54,6 +77,12 @@ class WooCommerce_Treatment_Options_Admin {
         $treatment_options = array_intersect( $treatment_options, $valid_options );
         
         update_post_meta( $post_id, '_treatment_options', $treatment_options );
+        
+        // Save WYSIWYG content
+        if ( isset( $_POST['_treatment_options_content'] ) ) {
+            $content = wp_kses_post( $_POST['_treatment_options_content'] );
+            update_post_meta( $post_id, '_treatment_options_content', $content );
+        }
     }
 
     public function enqueue_admin_scripts( $hook ) {
